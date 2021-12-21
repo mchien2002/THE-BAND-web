@@ -1,0 +1,29 @@
+/* cover: co vừa với phần tử chứa nó nhưng sẽ bị cắt */
+/* no-repeat: không lập lại hình ảnh */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#slider{
+    margin-top: 46.5px;
+    padding-top: 50%;
+    background: url('/w3_band/assets/img/header.jpg') top center / cover no-repeat;
+    position: relative;
+}
+#slider .text-img{
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    text-align: center;
+    width: 100%; /*căn chữ chính giữa*/
+    
+}
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 30px;
+    margin: 25px 0;
+}
+#slider .text-body{
+    font-size: 15px;
+}

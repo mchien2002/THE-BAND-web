@@ -1,0 +1,109 @@
+Những cách đặt tên:
+
+1. Header (Đầu trang)
+2. Navigation (Điều hướng: Nút bấm điều hướng)
+3. Breadcrumb (Định vị)
+4. Sidebar
+5. Slider
+6. Footer (Chân trang)
+
+
+Thực hành: https://www.w3schools.com/w3css/tryw3css_templates_band.htm#
+1. Phân tích --> OK
+	1. Header
+	2. Slider
+	3. Content
+		1. About
+		2. Tour
+		3. Contect
+		4. Image
+	4. Footer
+2. Dựng base
+3. Xây dựng từng phần theo phân tích
+4. Hoàn thiện
+
+
+/* Reset CSS */
+*{
+	padding:  0;
+	margin:  0;
+	box-sizing: border-box;	
+}
+
+html{
+	/*chỉnh font chữ*/
+	font-family: Helvatical, Arial, sans-serif;
+}
+
+/*
+1. tu ngoai vao trong
+2. tu tren xuong duoi
+3. tong quan den chi tiet
+*/
+
+/*
+1. vi tri
+2. kich thuoc
+3. mau sac
+4. kieu dang 
+*/
+
+#main{
+
+}
+
+#header{
+	height:  46px;
+	background-color: #000;
+}
+
+.subnav{
+	display: ;
+}
+#nav {
+	display: block;
+	position: relative;
+}
+
+#nav > li > a{
+	color: #fff;
+}
+
+#nav li a{
+	/*xóa thanh ngang dưới chữ*/
+	text-decoration: none;
+	/*căn lề cho chữ ở giữa header*/
+	line-height: 46px;
+	padding: 0 24px;
+	/*tăng kích thước ô vuông màu xám*/
+	display: inline-block;
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+	color: #000;
+	background-color: #ccc;
+}
+
+#nav .subnav{
+	/*ẩn thẻ li*/
+	/* display: none; */
+	position: absolute;
+	background-color: #fff;
+}
+
+#nav .subnav a{
+	color: #000;
+}
+
+#slider{
+	min-height: 500px;
+	background-color: #333;
+}
+
+#content{
+
+}
+
+#footer{
+
+}

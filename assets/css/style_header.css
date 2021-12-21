@@ -1,0 +1,83 @@
+/* Reset CSS */
+*{
+	padding:  0;
+	margin:  0;
+	box-sizing: border-box;	
+}
+
+html{
+	/*chỉnh font chữ*/
+	font-family: Helvatical, Arial, sans-serif;
+}
+
+/*
+1. tu ngoai vao trong
+2. tu tren xuong duoi
+3. tong quan den chi tiet
+*/
+
+/*
+1. vi tri
+2. kich thuoc
+3. mau sac
+4. kieu dang 
+*/
+
+#header{
+	height: 46.5px;
+	background-color: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1; /*nổi lên các phần tử trùng với nó*/
+}
+#nav{
+	display: flex;
+	position: relative;
+}
+li{
+	list-style: none;
+}
+#nav li a:hover{
+	color: #000;
+	background-color: #ccc;
+}
+#nav > li > a{
+	color: #fff;
+}
+#nav li a{
+	padding: 0 24px;
+	text-decoration: none;
+	line-height: 46.5px;
+	display: inline-block;
+	text-transform: uppercase;
+}
+#nav .subnav{
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .subnav a {
+	color: #000;
+	display: block;
+}
+#nav li:hover .subnav{
+	display: block;
+}
+#nav .nav-arrow-down{
+	font-size: 12px;
+}
+#nav .search-icon{
+	font-size: 13px;
+	color: #fff;
+	line-height: 46.5px;
+}
+#nav .li-icon a:hover{
+	background-color: red;
+}
+#nav .li-icon{
+	position: absolute;
+	right: 0;
+}

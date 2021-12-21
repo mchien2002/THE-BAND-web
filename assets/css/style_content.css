@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+	/*chỉnh font chữ*/
+	font-family: Helvatical, Arial, sans-serif;
+    /* hành vi khi cuộn */
+    scroll-behavior: smooth;
+} 
+
+/* Common */
+/* class cho chữ màu trắng */
+.text-white{
+    color: #fff !important; 
+}
+/* class cho chữ màu đen */
+.text-black{
+    color: #000 !important;
+}
+.clear{
+    clear: both;
+}
+.row{
+    margin-right: -9px;
+    margin-left: -11px;
+}
+.col{
+    float: left;
+    padding-right: 8px;
+    padding-right: 8px;
+}
+.col-third{
+    width: 33.33333%;
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+
+/* MAIN  */
+
+
+#content .content-section{
+    width: 1000px ;
+    margin-left: auto; /*căn chiính giữa*/
+    margin-right: auto;
+    padding: 64px 16px;
+}
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center; /*căn chữ chính giữa*/
+    letter-spacing: 4px; /*khoảng cách giữa các chữ*/
+}
+#content .section-sub-heading{
+    text-align: center;
+    font-size: 15px;
+    margin: 15px 0; 
+    font-style: italic; /*in nghiêng*/
+    opacity: 0.6; /*làm mờ chữ*/
+}
+#content .about-text{
+    font-size: 15px;
+    text-align: justify; /*căn đều*/
+    line-height: 1.6; /*khoảng cách giữa các dòng*/
+}
+#content .member-item{
+    float: left; /*trôi sang trái thành một hàng*/
+    width: 20%;
+    text-align: center;
+}
+#content .member-list{
+    padding: 32px 0;
+    height: 286px;
+}
+#content .member-name{
+    font-size: 15px;
+    margin: 15px 0;
+}
+#content .member-img{
+    width: 154px;
+    border-radius: 4px; /*vô tròn góc ảnh*/
+}
+.tour-section{
+    background-color: black;
+}
+#content .ticket-list{
+    background-color: #fff;
+}
+.ticket-list li{
+    font-size: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.ticket-list .sold-out{
+    background-color: red;
+    color: #fff;
+    padding: 1px;
+    margin-left: 16px;
+}
+.ticket-list .ticket-quantity{
+    background: black;
+    border-radius: 50%;
+    color: #fff;
+    float: right;
+    padding: 3px 9px;
+    text-align: center;
+}
+.tour-place{
+    margin: 32px -9px 0px -11px;
+
+}
+.place-item{
+    float: left;
+    width: 33.33333%;
+    padding: 10px 10px;
+}
+.place-img{
+    width: 100%;
+    display: block;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-body{
+    background-color: #fff;
+    padding: 16px;
+}
+.place-name{
+   margin: 15px 0;
+   font-weight: 600;
+   font-size: 15px;
+}
+.place-time{
+    margin: 15px 0;
+   opacity: 0.6;
+}
+.place-text{
+    margin: 15px 0;
+    
+}
+.place-btn{
+    color: #fff;
+    background-color: black;
+    text-decoration: none;
+    display: inline-block;  
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+.place-btn:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+/* CONNECT */
+
+input.form-control {
+    WIDTH: 100%;
+}
+
+.row p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+input.form-control {
+    padding: 11px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+}
+button.send-btn {
+    border: none;
+    background: #000;
+    color: #fff;
+    padding: 11px 12px;
+    font-size: 15px;
+    float: right;
+    cursor: pointer;
+}
+button.send-btn:hover{
+    background-color: #ccc;
+    color:  black;
+}
+label.connect-label{
+    font-family: Helvatical, Arial, sans-serif;
+}
+.row-connect{
+    padding: 32px 0;
+}
+
+/* FOOTER  */
+
+
+#footer{
+    background: url('/w3_band/assets/img/footer.jpg') bottom center / cover no-repeat;
+    padding-top: 50%;
+}
+.footer-content{
+    text-align: center;
+    padding: 64px 16px;
+    opacity: 0.6;
+}
+.footer-icon{
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.footer-author{
+    margin: 15px 0;
+    font-size: 15px;
+}
+.footer-icon i:hover{
+    opacity: 0.4;
+    cursor: pointer;
+}

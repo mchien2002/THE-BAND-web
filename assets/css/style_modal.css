@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Helvatical, Arial, sans-serif;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* căn chỉnh chính giữa màn hình thằng cha */
+    display: none;
+    align-items: center;    
+    justify-content: center;
+    z-index: 1;
+}
+
+.open{
+    display: flex;
+}
+.modal-container {
+    background: #fff;
+    width: 790px;
+    min-height: 200px;
+    max-width: calc(100% - 32px);
+    position: relative;
+    animation: modal-FadeIn-open ease .5s;
+}
+.close-btn {
+    position: absolute;
+    padding: 14px 16px;
+    color: #fff;
+    right: 0;
+    cursor: pointer;
+    border: none;
+    background: rgb(0, 150, 136);
+}
+.modal-header {
+    height: 129px;
+    background: rgb(0, 150, 136);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;    
+}
+.modal-label-header {
+    font-family: "Segoe UI",Arial,sans-serif;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+.modal .modal-label {
+    font-family: Helvatical, Arial, sans-serif;
+}
+.modal-footer,
+.modal-body {
+    padding: 0 15px;
+}
+i.ti-user,
+i.ti-shopping-cart {
+    display: block;
+    margin: 15px 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+input.modal-input {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 8px;
+    opacity: 0.7;
+}
+button.pay-btn {
+    width: 100%;
+    font-size: 17px;
+    padding: 16px;
+    margin: 16px 0;
+    background: rgb(0, 150, 136);
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+button.close-footer-btn {
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    border: none;  /*xóa đường gạch chân*/
+    font-size: 15px;
+    font-weight: 500;
+    background: red;
+    color: #fff;
+    cursor: pointer;
+}
+label.modal-help {
+    font-size: 15px;
+    float: right;
+    margin: 13px 0;
+}
+.modal-footer a{
+    font-weight: 600;
+}
+.close-btn:hover,
+.pay-btn:hover,
+.close-footer-btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+/* chuyện động animation */
+@keyframes modal-FadeIn-open{
+    /* từ đâu */
+    from{
+        opacity: 0;
+        transform: translateY(-156px);
+    }
+    /* đến đâu */
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
